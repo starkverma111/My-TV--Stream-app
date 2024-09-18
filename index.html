@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Columns with Tailwind CSS</title>
+  <link href="https://fonts.cdnfonts.com/css/google-sans" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body,
+      html {
+        font-family: 'Product Sans Light', sans-serif !important;
+        height: 100%;
+        margin: 0;
+      }
+	  </style>
+</head>
+<body>
+<div class="navbar bg-base-100 shadow">
+  <div class="flex-none">
+    <button class="btn btn-square btn-ghost">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        class="inline-block h-5 w-5 stroke-current">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+  </div>
+  <div class="flex-1">
+    <a class="btn btn-ghost text-xl  hover:bg-white">My TV -Stream app</a>
+  </div>
+</div>
+
+ <div class="bg-slate-100">
+   <div class="container mx-auto">
+    <div class="flex flex-col md:flex-row items-center justify-center h-screen p-5 bg-slate-100">
+      <!-- First Column: Welcome Text -->
+      <div class="w-full md:w-1/2 p-4 my-12">
+	  <span class="text-2xl py-2 tracking-widest"> Welcome to</span>
+        <h1 class="text-6xl font-bold text-center md:text-left py-2 tracking-wider">
+          My TV -Stream app
+        </h1>
+		<p class="py-6 text-xl">My TV is an advanced IPTV app that brings you endless entertainment right at your fingertips. With a sleek, user-friendly interface, My TV makes it easy to stream your favorite TV channels, shows, and movies anytime, anywhere. Whether you're looking for live TV or on-demand content, My TV delivers high-quality streams to ensure an immersive viewing experience.
+
+</p>
+<button class="btn btn-outline btn-wide rounded-full tracking-widest 
+uppercase hover:bg-rose-600 hover:border-rose-600">Download Now</button>
+      </div>
+      
+      <!-- Second Column: Dummy App Image -->
+     <div class="w-full md:w-1/2 flex justify-center">
+			<img src="4.png" alt="App Image" class="mx-auto object-cover rounded-xl" height="500px" width="500px">
+		</div>
+    </div>
+</div>
+	
+	<div class="flex flex-col md:flex-row items-center bg-white py-24">
+      <div class="w-full md:w-1/2">
+		  <img src="banner_image.png" alt="App Image" 
+		  class="mx-auto rounded-lg object-cover" height="380px" width="380px">
+      </div>
+      
+     <div class="w-full md:w-1/2 p-4 flex items-center justify-center p-5">
+
+  <ul class="space-y-3 mx-8">
+   <h1 class="text-5xl font-bold text-center md:text-left py-6 tracking-wider">
+		
+          Features
+        </h1>
+   <li class="text-body-color dark:text-dark-6 flex text-xl">
+      <span class="text-secondary mr-2.5 mt-0.5">
+         <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            >
+            <g clip-path="url(#clip0_980_24852)">
+               <path
+                  d="M10 0.5625C4.78125 0.5625 0.5625 4.78125 0.5625 10C0.5625 15.2188 4.78125 19.4688 10 19.4688C15.2188 19.4688 19.4688 15.2188 19.4688 10C19.4688 4.78125 15.2188 0.5625 10 0.5625ZM10 18.0625C5.5625 18.0625 1.96875 14.4375 1.96875 10C1.96875 5.5625 5.5625 1.96875 10 1.96875C14.4375 1.96875 18.0625 5.59375 18.0625 10.0312C18.0625 14.4375 14.4375 18.0625 10 18.0625Z"
+                  fill="currentColor"
+                  />
+               <path
+                  d="M12.6875 7.09375L8.96875 10.7188L7.28125 9.0625C7 8.78125 6.5625 8.8125 6.28125 9.0625C6 9.34375 6.03125 9.78125 6.28125 10.0625L8.28125 12C8.46875 12.1875 8.71875 12.2813 8.96875 12.2813C9.21875 12.2813 9.46875 12.1875 9.65625 12L13.6875 8.125C13.9688 7.84375 13.9688 7.40625 13.6875 7.125C13.4063 6.84375 12.9688 6.84375 12.6875 7.09375Z"
+                  fill="currentColor"
+                  />
+            </g>
+            <defs>
+               <clipPath id="clip0_980_24852">
+                  <rect width="20" height="20" fill="white" />
+               </clipPath>
+            </defs>
+         </svg>
+      </span>
+      Clean & Intuitive UI: Enjoy a smooth and clutter-free interface that allows you to easily navigate through channels and content with minimal effort.
+   </li>
+   <li class="text-body-color dark:text-dark-6 flex text-xl">
+      <span class="text-secondary mr-2.5 mt-0.5">
+         <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            >
+            <g clip-path="url(#clip0_980_24852)">
+               <path
+                  d="M10 0.5625C4.78125 0.5625 0.5625 4.78125 0.5625 10C0.5625 15.2188 4.78125 19.4688 10 19.4688C15.2188 19.4688 19.4688 15.2188 19.4688 10C19.4688 4.78125 15.2188 0.5625 10 0.5625ZM10 18.0625C5.5625 18.0625 1.96875 14.4375 1.96875 10C1.96875 5.5625 5.5625 1.96875 10 1.96875C14.4375 1.96875 18.0625 5.59375 18.0625 10.0312C18.0625 14.4375 14.4375 18.0625 10 18.0625Z"
+                  fill="currentColor"
+                  />
+               <path
+                  d="M12.6875 7.09375L8.96875 10.7188L7.28125 9.0625C7 8.78125 6.5625 8.8125 6.28125 9.0625C6 9.34375 6.03125 9.78125 6.28125 10.0625L8.28125 12C8.46875 12.1875 8.71875 12.2813 8.96875 12.2813C9.21875 12.2813 9.46875 12.1875 9.65625 12L13.6875 8.125C13.9688 7.84375 13.9688 7.40625 13.6875 7.125C13.4063 6.84375 12.9688 6.84375 12.6875 7.09375Z"
+                  fill="currentColor"
+                  />
+            </g>
+            <defs>
+               <clipPath id="clip0_980_24852">
+                  <rect width="20" height="20" fill="white" />
+               </clipPath>
+            </defs>
+         </svg>
+      </span>
+      Custom Channel Management: Add, edit, or delete IPTV channels with ease, organizing your favorites in one place.
+   </li>
+   <li class="text-body-color dark:text-dark-6 flex text-xl">
+      <span class="text-secondary mr-2.5 mt-0.5">
+         <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            >
+            <g clip-path="url(#clip0_980_24852)">
+               <path
+                  d="M10 0.5625C4.78125 0.5625 0.5625 4.78125 0.5625 10C0.5625 15.2188 4.78125 19.4688 10 19.4688C15.2188 19.4688 19.4688 15.2188 19.4688 10C19.4688 4.78125 15.2188 0.5625 10 0.5625ZM10 18.0625C5.5625 18.0625 1.96875 14.4375 1.96875 10C1.96875 5.5625 5.5625 1.96875 10 1.96875C14.4375 1.96875 18.0625 5.59375 18.0625 10.0312C18.0625 14.4375 14.4375 18.0625 10 18.0625Z"
+                  fill="currentColor"
+                  />
+               <path
+                  d="M12.6875 7.09375L8.96875 10.7188L7.28125 9.0625C7 8.78125 6.5625 8.8125 6.28125 9.0625C6 9.34375 6.03125 9.78125 6.28125 10.0625L8.28125 12C8.46875 12.1875 8.71875 12.2813 8.96875 12.2813C9.21875 12.2813 9.46875 12.1875 9.65625 12L13.6875 8.125C13.9688 7.84375 13.9688 7.40625 13.6875 7.125C13.4063 6.84375 12.9688 6.84375 12.6875 7.09375Z"
+                  fill="currentColor"
+                  />
+            </g>
+            <defs>
+               <clipPath id="clip0_980_24852">
+                  <rect width="20" height="20" fill="white" />
+               </clipPath>
+            </defs>
+         </svg>
+      </span>
+     High-Quality Streaming: Supports HD and 4K streams, ensuring you never miss a detail while watching your favorite shows and movies.
+   </li>
+   <li class="text-body-color dark:text-dark-6 flex text-xl">
+      <span class="text-secondary mr-2.5 mt-0.5">
+         <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            >
+            <g clip-path="url(#clip0_980_24852)">
+               <path
+                  d="M10 0.5625C4.78125 0.5625 0.5625 4.78125 0.5625 10C0.5625 15.2188 4.78125 19.4688 10 19.4688C15.2188 19.4688 19.4688 15.2188 19.4688 10C19.4688 4.78125 15.2188 0.5625 10 0.5625ZM10 18.0625C5.5625 18.0625 1.96875 14.4375 1.96875 10C1.96875 5.5625 5.5625 1.96875 10 1.96875C14.4375 1.96875 18.0625 5.59375 18.0625 10.0312C18.0625 14.4375 14.4375 18.0625 10 18.0625Z"
+                  fill="currentColor"
+                  />
+               <path
+                  d="M12.6875 7.09375L8.96875 10.7188L7.28125 9.0625C7 8.78125 6.5625 8.8125 6.28125 9.0625C6 9.34375 6.03125 9.78125 6.28125 10.0625L8.28125 12C8.46875 12.1875 8.71875 12.2813 8.96875 12.2813C9.21875 12.2813 9.46875 12.1875 9.65625 12L13.6875 8.125C13.9688 7.84375 13.9688 7.40625 13.6875 7.125C13.4063 6.84375 12.9688 6.84375 12.6875 7.09375Z"
+                  fill="currentColor"
+                  />
+            </g>
+            <defs>
+               <clipPath id="clip0_980_24852">
+                  <rect width="20" height="20" fill="white" />
+               </clipPath>
+            </defs>
+         </svg>
+      </span>
+      Multi-Device Support: Stream content seamlessly across multiple devices—whether it’s on your phone, tablet, or TV.
+   </li>
+
+</ul>
+</div>
+    </div>
+  </div>
+  
+  
+    
+ <div class="bg-slate-100"> 
+  <div class="container mx-auto bg-slate-100 p-16">
+    
+    <!-- Centered Heading -->
+    <h1 class="text-7xl font-bold text-center mb-20 tracking-wider">
+      Snapshots
+    </h1>
+    
+    <!-- Responsive Image Grid -->
+    <div class="container mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-10">
+      
+      <!-- Image 1 -->
+      <div class="w-full">
+        <img src="2.png" alt="Image 1" class="w-full h-auto object-cover rounded-lg ">
+      </div>
+      
+      <!-- Image 2 -->
+      <div class="w-full">
+        <img src="4.png" alt="Image 2" class="w-full h-auto object-cover rounded-lg">
+      </div>
+      
+      <!-- Image 3 -->
+      <div class="w-full">
+        <img src="3.png" alt="Image 3" class="w-full h-auto object-cover rounded-lg">
+      </div>
+      
+	        <!-- Image 3 -->
+      <div class="w-full">
+        <img src="5.png" alt="Image 3" class="w-full h-auto object-cover rounded-lg">
+      </div>
+      
+    </div>
+  </div>
+  </div> 
+  <div class="py-16">
+     <h1 class="text-7xl font-bold text-center my-10 tracking-wider">
+      Why to Pay
+    </h1>
+  
+  </div>
+<footer class="footer footer-center bg-gray-600 text-base-content text-white p-4 text-base">
+  <aside>
+    <p>Copyright All Rights Reserved 2024 | Niyander</p>
+  </aside>
+</footer>
+  
+</body>
+</html>
